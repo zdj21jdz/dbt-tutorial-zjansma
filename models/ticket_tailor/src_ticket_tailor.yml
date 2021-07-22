@@ -1,0 +1,14 @@
+version: 2
+
+sources:  
+  - name: ticket_tailor
+    description: for ticketing info
+    schema: ticket_tailor
+    database: raw
+    tables:
+      - name: orders
+        loaded_at_field: _etl_loaded_at
+      - name: events
+        loaded_at_field: _etl_loaded_at
+      - name: issued_tickets
+        loaded_at_field: _etl_loaded_at
